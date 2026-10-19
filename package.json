@@ -1,0 +1,29 @@
+{
+  "name": "polar-lab",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "api": "node api/server.js",
+    "dev": "concurrently -n api,app -c blue,green \"npm run api\" \"expo start\""
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "^57.0.17",
+    "expo": "^57.0.27",
+    "expo-status-bar": "~57.0.1",
+    "express": "^5.1.0",
+    "react": "19.2.3",
+    "react-dom": "^19.2.3",
+    "react-native": "0.86.3",
+    "react-native-web": "^0.21.4"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.4",
+    "concurrently": "^9.1.2",
+    "typescript": "~6.0.3"
+  },
+  "private": true
+}
