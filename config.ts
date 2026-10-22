@@ -2,7 +2,7 @@ import { Platform } from 'react-native';
 import { AngleUnit } from './types';
 
 const DEFAULT_HOST =
-    Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
+    Platform.OS === 'android' ? '192.168.0.108' : 'localhost';
 
 export const API_URL =
     process.env.EXPO_PUBLIC_API_URL ?? `http://${DEFAULT_HOST}:3001`;
